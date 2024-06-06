@@ -1,0 +1,21 @@
+/* Super house selection filter */
+    .superhouse--filter-block {
+        display: flex;
+        align-items: center;
+    }
+
+    .superhouse--filter-block label {
+        width: 120px;
+    }
+
+    .superhouse--filter-block input {
+        width: 20rem !important;
+    }
+
+    .superhouse--filter-block .filter--btns {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        padding-inline: 10px;
+    }
+/* Super house selection filter */

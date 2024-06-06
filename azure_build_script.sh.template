@@ -1,0 +1,20 @@
+#!/bin/bash
+
+RED='\033[0;31m'
+GREEN='\033[1;32m'
+NC='\033[0m'
+
+currentBranch=$(git branch | sed -n -e 's/^\* \(.*\)/\1/p')
+
+npm install
+npm run build
+git branch -D build-dev
+git checkout -b build-dev
+rm -rf src/ node_modules/ public/ static/ debug.log package.json README.md package-lock.json azure_build_script.sh
+mv build/* .
+rm -rf build/
+git add .
+git commit -m 'bash auto commit'
+git push --force origin build-dev
+git checkout $currentBranch
+echo azure_build_script.sh completed.

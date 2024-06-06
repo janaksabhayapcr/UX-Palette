@@ -1,0 +1,106 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`View Renderer : View Test  Should render with all of the props 1`] = `
+<div
+  className="centered-view-container"
+>
+  <div
+    className="uw-4x4"
+    id="view-container"
+  >
+    <div
+      id="title-container"
+    >
+      <div
+        className="view-titlediv"
+        title="View-Layout ID: [object Object] / View ID: [object Object]"
+      >
+        <h2
+          id="view-title"
+          title="View Instance of Title"
+        >
+          Title
+          <div />
+        </h2>
+      </div>
+      <div
+        className="view-externalLink"
+        title={Object {}}
+      >
+        <div
+          onClick={[Function]}
+          title={Object {}}
+        >
+          <span
+            aria-hidden={true}
+            className="fa fa-view-externallink-img fa-2x fa fa-external-link view-externallink-img"
+            style={
+              Object {
+                "color": "lightgray",
+                "textShadow": "0 1px 0 rgba(0, 0, 0, 0.1)",
+              }
+            }
+          />
+        </div>
+      </div>
+      <span
+        aria-hidden={true}
+        className="fa fa-view fa-lg fa-line-chart"
+        id="view-rotate-with-link"
+        onClick={[Function]}
+        title="View Chart"
+      />
+      <div
+        className="view-menu"
+      >
+        <ul
+          aria-activedescendant=""
+          className="rc-menu rc-menu-vertical  rc-menu-root"
+          id="view-title-img"
+          onKeyDown={[Function]}
+          role="menu"
+          style={Object {}}
+          tabIndex="0"
+        >
+          <li
+            className="view-sub-menu rc-menu-submenu-vertical rc-menu-submenu"
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            style={undefined}
+          >
+            <div
+              aria-expanded={false}
+              aria-haspopup="true"
+              aria-owns="item_0$Menu"
+              className="rc-menu-submenu-title"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              style={Object {}}
+              title={undefined}
+            >
+              <div
+                className="view-sub-menu-img"
+              >
+                <span
+                  aria-hidden={true}
+                  className="fa fa-menu-bar-gears fa-bars view-menu-img"
+                />
+              </div>
+              <i
+                className="rc-menu-submenu-arrow"
+              />
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div
+      className="__react_component_tooltip place-top type-dark "
+      data-id="tooltip"
+    >
+      
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,48 @@
+.task--treeview-blocks {
+  background: #e4e4e4;
+  padding: 12px 0 12px 12px;
+  font-size: 14px;
+  border-radius: 0;
+  position: relative;
+}
+.task--treeview-blocks::after{
+    position: absolute;
+    content: "";
+    top: 0px;
+    right: -12px;
+    width: 1px;
+    height: 100%;
+    background-color: #BFBFBF;
+}
+.task--treeview-blocks ul,
+.task--treeview-blocks li {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 0px;
+}
+
+.task--treeview-blocks li span{
+    cursor: pointer;
+}
+
+.assign-user--blocks {
+  border: 1px solid lightgray;
+  margin-top: 13px !important;
+}
+
+.list-users--block .header {
+  border-bottom: 1px solid lightgray;
+}
+.list-users--block .users-list {
+  padding-block: 5px;
+}
+
+.list-users--block .users-list .user-info {
+  gap: 5px;
+  font-size: 14px;
+}
+.tasks--tree-view{
+    padding: 10px;
+    border: 1px solid #BFBFBF;
+    border-radius: 8px;
+}

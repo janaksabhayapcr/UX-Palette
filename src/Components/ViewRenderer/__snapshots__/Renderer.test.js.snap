@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`View Renderer : RendererTest  Should render with all of the props 1`] = `<div />`;
+
+exports[`View Renderer : RendererTest renders a modal portal 1`] = `
+<div>
+  <Modal
+    ariaHideApp={true}
+    bodyOpenClassName="ReactModal__Body--open"
+    closeTimeoutMS={0}
+    isOpen={false}
+    parentSelector={[Function]}
+    portalClassName="ReactModalPortal"
+    role="dialog"
+    shouldCloseOnEsc={true}
+    shouldCloseOnOverlayClick={true}
+    shouldFocusAfterRender={true}
+    shouldReturnFocusAfterClose={true}
+    style={
+      Object {
+        "content": Object {
+          "bottom": "auto",
+          "height": "25%",
+          "left": "50%",
+          "marginRight": "-50%",
+          "overflowY": "auto",
+          "right": "auto",
+          "top": "25%",
+          "updateViewXMLValue": "translate(-50%, -50%)",
+          "width": "35%",
+        },
+      }
+    }
+  >
+    <div
+      id="modal-container"
+    >
+      <ViewOverride
+        context={
+          Array [
+            Object {
+              "Parameter": Array [],
+              "Value": Array [],
+            },
+          ]
+        }
+        extractDataFromXML={[Function]}
+        settingModalOpen={false}
+        user={Object {}}
+      />
+      <div
+        id="modal-button-container"
+      >
+        <button
+          className="modal-button"
+          id="modal-btn-cancel"
+          onClick={[Function]}
+        >
+          Cancel
+        </button>
+      </div>
+    </div>
+  </Modal>
+</div>
+`;

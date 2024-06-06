@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="theme-color" content="#000000" />
+    <meta http-equiv="cache-control" content="max-age=0" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+    <meta http-equiv="pragma" content="no-cache" />
+<!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" /> -->
+    <link rel="stylesheet" href="https://dmblob.totalwealthviews.com/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="/izitoast/dist/css/iziToast.min.css">
+    <script src="iziToast.min.js"></script>
+  <!-- </title> -->
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>PCR Universe</title>
+    <!-- <div
+      id="RUNNING_APP_HTML"
+      data-app=""
+      onclick="renderCSS()"
+    >
+  </div> -->
+  <script>
+      if (typeof window.__REACT_DEVTOOLS_GLOBAL_HOOK__ === 'object') {
+        __REACT_DEVTOOLS_GLOBAL_HOOK__.inject = function() {};
+      }
+  </script>
+  </head>
+  <body><div
+      id="GLOBAL_INFO"
+      data-ENVVAR="dmenrollment"
+      data-CLIENTNAME='totalwealthviews'
+      data-b2cclientid='9b2a320d-f3b8-48da-aa03-0c4dfe9248cd'
+      data-DOMAIN='com'
+      data-getuserinformationurl=''
+      data-b2ctenantlogin='pcrprod.b2clogin.com'
+      data-b2ctenant='pcrprod.onmicrosoft.com'
+      data-b2cloginsignuppolicy='B2C_1A_signup_signin_pcr'
+      data-b2cpasswordresetpolicy='B2C_1A_PasswordReset'
+      data-GETSESSIONURL='https://dmapi.totalwealthviews.com/newportsession/api/SessionManager/Initiate'
+      data-SUBSCRIPTIONKEY='11dc98b85dc7413cbe3148e5209980ac'
+      data-CDNBASEURL='https://blob.totalwealthviews.com/'
+      data-CDNCSSFILE='css/default.css'
+      data-APIMANAGERENVVAR='api.totalwealthviews'
+      data-SESSIONKEY='9f9f39ce-6e67-4bb1-8b08-7871334a2c36'
+      data-DISCOVERYKEY='KbPeShVmYq3t6w9y$B&E)H@McQfTjWnZr4u7x!A%C*F-JaNdRgUkXp2s5v8y/B?E'
+      data-remoteinstance='false'
+      data-siteminderauth='false'
+      data-siteminderclientid=''
+      data-siteminderencodedcookie=''
+      data-siteminderloginurl='http://localhost:3000/login.html'
+      data-remoteoidcauth='false'
+      data-remoteoidcaudience='747e5d97-0022-4dc8-bd4d-a4cf4105aac5'
+      data-remoteoidcclientid='747e5d97-0022-4dc8-bd4d-a4cf4105aac5'
+      data-remoteoidcaccessurl='https://qablob.totalwealthviews.net/discovery/Keys/540Access.json'
+      data-remoteoidcauthorizeurl='https://jwt-dev.pcr-net.net/api/jwt/authorize?redirect_uri=http://localhost:3000%2Fauthorize'
+      data-remoteoidcredirecturl='http://localhost:3000/authorize'
+      data-remoteoidcsignouturl='https://jwt-dev.pcr-net.net/logout'
+      data-oidccontextclaim='acr'
+      data-oidcvalueclaim='sub'
+      data-clientid='747e5d97-0022-4dc8-bd4d-a4cf4105aac5'
+      data-tokenurl='https://cfgapi.totalwealthviews.net/newportsession/auth/token'
+      data-oidclocalconfig='false'
+      data-parentorigin='http://localhost:81'>
+    </div>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>

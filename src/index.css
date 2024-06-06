@@ -1,0 +1,546 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+@import 'assets/css/global-component.css';
+
+/* {{ START:: React Table CSS ------> }} */
+
+.rt-thead {
+  background-color: var(--main-table-header-color, var(--main-banner-alt-color, gray)) !important;
+}
+
+.react--table.ReactTable .rt-thead {
+  background-color: #1976d2 !important;
+}
+.react--table.ReactTable .rt-thead .rt-th,
+.react--table.ReactTable .rt-td {
+  padding: 5px 15px;
+}
+.react--table.ReactTable .rt-thead .rt-th.-sort-asc,
+.react--table.ReactTable .rt-thead .rt-th.-sort-desc {
+  box-shadow: none;
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs, 1));
+}
+.react--table.ReactTable .rt-resizer {
+  right: -5%;
+  width: 12px;
+}
+.rt-resizable-header-content {
+  text-transform: capitalize;
+  font-weight: 500;
+  color: #f2f2f2;
+}
+
+.react--table.ReactTable .rt-thead .rt-th.-sort-asc::after,
+.react--table.ReactTable .rt-thead .rt-th.-sort-asc::before,
+.react--table.ReactTable .rt-thead .rt-th.-sort-desc::after,
+.react--table.ReactTable .rt-thead .rt-th.-sort-desc::before {
+  content: '';
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  width: 2px;
+  background: currentColor;
+  border-radius: 4px;
+}
+.react--table.ReactTable .rt-thead .rt-th.-sort-asc::after,
+.react--table.ReactTable .rt-thead .rt-th.-sort-desc::after {
+  height: 10px;
+  box-shadow: -4px 4px 0;
+  top: 50%;
+  transform: translateY(-73%);
+  right: 24px;
+}
+.react--table.ReactTable .rt-thead .rt-th.-sort-asc::before,
+.react--table.ReactTable .rt-thead .rt-th.-sort-desc::before {
+  height: 5px;
+  transform: rotate(45deg);
+  box-shadow: 7px -4px 0;
+  top: 16px;
+  right: 30px;
+}
+.ReactTable .rt-tfoot .rt-tr .rt-td {
+  padding: 5px 15px !important;
+  text-align: start !important;
+  background-color: var(--main-table-header-color, var(--main-banner-alt-color, gray)) !important;
+  color: #f2f2f2;
+}
+/* {{ END:: React Table CSS ------> }} */
+
+/* {{ START:: Button CSS ------>  }} */
+
+.global--btn-css {
+  max-width: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6px 14px;
+  border-radius: 6px;
+  border: none;
+  color: #fff;
+  background: linear-gradient(180deg, #4b91f7 0%, #367af6 100%);
+  background-origin: border-box;
+  box-shadow: 0px 0.5px 1.5px rgba(54, 122, 246, 0.25), inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2);
+  user-select: none;
+  touch-action: manipulation;
+}
+
+.global--add-btn {
+  background-color: #e1ecf4 !important;
+  color: #39739d !important;
+}
+.global--add-btn span {
+  font-size: 13px;
+  color: #39739d;
+}
+.global--download-btn {
+  width: fit-content;
+  padding: 3px 12px;
+}
+.global--download-btn span {
+  font-size: 14px;
+  color: #f2f2f2;
+}
+
+.dynamic--button {
+  font-size: 14px !important;
+  font-weight: 500 !important;
+}
+.modal--icon-btn {
+  min-width: 22px;
+  width: 22px;
+  height: 22px;
+  border: 1px solid #202020 !important;
+}
+.modal--icon-btn span {
+  font-size: 12px;
+  color: #202020 !important;
+}
+.global--filter-btn {
+  width: 40px;
+  height: 24px;
+  background-color: transparent !important;
+  outline: none;
+  border: 1.5px solid rgba(0, 0, 0, 0.1) !important;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+}
+
+.global--filter-btn svg {
+  font-size: 18px;
+  color: #202020;
+}
+
+.glodal--mini-btn {
+  min-width: 30px;
+  width: 30px;
+  height: 30px;
+  background: linear-gradient(180deg, #4b91f7 0%, #367af6 100%);
+  border-radius: 8px;
+  color: #f2f2f2 !important;
+}
+
+.glodal--mini-btn .fa-plus {
+  color: #f2f2f2 !important;
+}
+.glodal--mini-btn svg {
+  font-size: 16px;
+  display: block;
+}
+.global--add-btn-link {
+  padding: 6px 14px;
+  border-radius: 6px;
+  background-color: #e1ecf4 !important;
+  color: #39739d !important;
+  text-decoration: none;
+  font-size: 12px;
+  cursor: pointer;
+}
+.global--delete-btn {
+  min-width: 30px;
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  color: #f2f2f2 !important;
+  background-color: rgb(255, 26, 26, 0.3);
+}
+/* {{ END:: Button CSS ------>  }} */
+
+/* {{ START:: Select CSS ------> }} */
+.css-1pcexqc-container {
+  width: 100%;
+}
+.css-bg1rzq-control,
+.css-14ojxsb-control,
+.css-1szy77t-control {
+  border-radius: 5px !important;
+}
+.theme--select__placeholder {
+  font-size: 14px;
+  color: #202020 !important;
+}
+.css-bg1rzq-control:focus,
+.css-14ojxsb-control:focus,
+.css-1szy77t-control:focus,
+.css-bg1rzq-control:active,
+.css-14ojxsb-control:active,
+.css-1szy77t-control:active {
+  border-color: #1976d2 !important;
+  box-shadow: none !important;
+}
+.myenrollments-account-search-wrapper .css-1pcexqc-container {
+  width: 190px;
+}
+/* {{ END:: Select CSS ------> }} */
+
+/* {{ START:: input CSS ------> }} */
+
+.theme--input,
+.theme--textarea {
+  padding: 4px 12px;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: capitalize;
+  border-radius: 4px;
+  background: #fff;
+  color: #202020;
+  border: 0px;
+  outline: none;
+  resize: none;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+.theme--input::placeholder,
+.theme--textarea::placeholder,
+.theme--datepicker::placeholder {
+  color: #202020;
+  font-size: 14px;
+}
+
+/* {{ END:: input CSS ------> }} */
+
+/* {{ START:: Date picker CSS ------> }} */
+.react-datepicker-wrapper,
+.react-datepicker__input-container {
+  width: 100%;
+}
+.theme--datepicker {
+  padding: 4px 12px;
+  font-size: 14px;
+  font-weight: 500;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  border-radius: 4px;
+  background: #fff;
+  width: 100%;
+  color: #202020;
+}
+/* {{ END:: Date picker CSS ------> }} */
+
+/* {{ START:: Normal table CSS ------> }} */
+
+.normal--table thead tr th,
+.normal--table tfoot tr th {
+  background-color: #1976d2;
+  font-size: 15px;
+  color: #f2f2f2 !important;
+}
+.normal--table thead tr,
+.normal--table tbody tr {
+  border-bottom: 1px solid rgb(26, 133, 255, 0.2) !important;
+}
+.normal--table thead tr th,
+.normal--table tbody tr td {
+  font-size: 14px;
+  color: #202020;
+  padding: 8px 18px;
+}
+.normal--table.table-striped > tbody > tr:nth-of-type(odd) > * {
+  background-color: rgb(50, 141, 231, 0.1);
+}
+.normal--table thead tr th svg {
+  font-size: 18px;
+}
+/* {{ END:: Normal table CSS ------> }} */
+
+/* {{ START:: Live pagination table CSS ------> }} */
+
+.live--pagination-table thead tr th {
+  background-color: #1976d2;
+  font-size: 15px;
+  color: #f2f2f2 !important;
+}
+.live--pagination-table thead tr,
+.live--pagination-table tbody tr {
+  border-bottom: 1px solid rgb(26, 133, 255, 0.2) !important;
+}
+.live--pagination-table thead tr th,
+.live--pagination-table tbody tr td {
+  font-size: 14px;
+  color: #202020;
+  padding: 8px 18px;
+}
+.live--pagination-table.table-striped > tbody > tr:nth-of-type(odd) > * {
+  background-color: rgb(50, 141, 231, 0.1);
+}
+.live--pagination-table thead tr th svg {
+  font-size: 18px;
+}
+.live--pagination-table {
+  position: relative;
+}
+.live--pagination-table .main--pagination {
+  position: absolute;
+  top: auto;
+  left: auto;
+  right: 0px;
+  bottom: 0px;
+  width: 100%;
+  padding: 8px 0px;
+  z-index: 12;
+  background-color: #fff;
+}
+.live--pagination-table .pagination .disabled {
+  background-color: rgb(140, 140, 140, 0.2) !important;
+}
+.live--pagination-table .pagination li.disabled a svg {
+  color: rgb(140, 140, 140, 0.5) !important;
+}
+.live--pagination-table .pagination li {
+  text-align: center;
+  color: #1976d2;
+  background-color: rgba(54, 122, 246, 0.25);
+}
+.live--pagination-table .pagination li a svg {
+  color: #1976d2 !important;
+}
+.live--pagination-table .pagination li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  height: 100%;
+}
+.live--pagination-table .pagination li a svg {
+  display: block;
+  font-size: 15px;
+  color: #202020;
+  text-align: center;
+}
+.live--pagination-table .pagination li {
+  width: 34px;
+  height: 22px;
+  margin-left: 8px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.live--pagination-table .pagination li:first-child {
+  margin-left: 0px;
+}
+.live--pagination-table .pagination li.selected {
+  color: #fff;
+  background-color: #1976d2;
+}
+.live--pagination-table .main--pagination .pagination--selector {
+  position: relative;
+  display: block;
+  max-width: 120px;
+  width: 100%;
+  border: 1px solid #1976d2;
+  background-color: #fff;
+  z-index: 10;
+  border-radius: 8px;
+}
+.live--pagination-table .main--pagination .pagination--selector select {
+  border: none;
+  outline: none;
+  background: transparent;
+  appearance: none;
+  border-radius: 0;
+  margin: 0;
+  display: block;
+  width: 100%;
+  padding: 6px 15px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #202020;
+}
+.live--pagination-table .main--pagination .pagination--selector::after {
+  position: absolute;
+  content: '';
+  top: 41%;
+  right: 15px;
+  border: 4px solid transparent;
+  border-top: 4px solid;
+  border-right: 4px solid;
+  transform: translateY(-50%) rotate(135deg);
+}
+/* {{ END:: Live pagination table CSS ------> }} */
+
+/* {{ START:: Modal CSS ------> }} */
+
+.dynamic-modal-ticket-window .directory ul {
+  list-style-type: none;
+  padding-left: 0px;
+  margin-bottom: 0px;
+}
+.dynamic-modal-ticket-window .directory span {
+  font-size: 14px;
+  font-weight: 500;
+  color: #202020;
+  cursor: pointer;
+}
+.ReactModal__Content {
+  border: none !important;
+}
+
+/* {{ END:: Modal CSS ------> }} */
+
+/* {{ START:: Dynamic Tabs CSS -------> }} */
+.dynamic--tabs .nav {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+  margin-bottom: 20px;
+  grid-gap: 12px;
+  padding-bottom: 12px;
+  margin-bottom: 12px;
+}
+.dynamic--tabs .nav .nav-item .nav-link {
+  padding: 4px 15px;
+  border: 0;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 8px;
+  background-color: #e1ecf4 !important;
+  color: #39739d !important;
+}
+.dynamic--tabs .nav .nav-item .nav-link.active {
+  background-color: #39739d !important;
+  color: #f2f2f2 !important;
+}
+.dynamic--tabs .nav .nav-item {
+  position: relative;
+}
+.dynamic--tabs .nav .nav-item::after {
+  position: absolute;
+  content: '';
+  width: 1px;
+  height: 80%;
+  background-color: rgba(0, 0, 0, 0.2);
+  top: 50%;
+  transform: translateY(-50%);
+  left: auto;
+  right: -6px;
+}
+.dynamic--tabs .nav .nav-item:last-child::after {
+  display: none;
+}
+/* {{ END:: Dynamic Tabs CSS -------> }} */
+
+/* {{ START:: Multi select transfer list CSS ---------> }} */
+
+.card--wrapper {
+  max-width: 350px;
+  width: 100%;
+  height: 350px;
+  border: 1.5px solid #1976d2;
+  border-radius: 8px;
+  padding: 5px;
+}
+.card--wrapper span {
+  font-size: 16px;
+  font-weight: 500;
+  color: #202020;
+}
+
+/* {{ NO:: Multi select transfer list CSS ---------> }} */
+
+/* {{ START:: Tree View CSS -------> }} */
+
+.directory ul {
+  padding: 0px;
+  margin: 0px;
+  list-style-type: none;
+}
+
+/* {{ END:: Tree View CSS -------> }} */
+
+/* {{ START:: Radio button CSS --------> }} */
+
+.dynamic--radio .css-1hbvpl3-MuiSvgIcon-root,
+.dynamic--radio .css-1hhw7if-MuiSvgIcon-root {
+  width: 18px;
+  height: 18px;
+}
+.dynamic--radio .css-ahj2mt-MuiTypography-root {
+  font-size: 13px;
+}
+.dynamic--radio .css-ngnl7p-MuiFormControlLabel-root {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+.dynamic--radio .css-qfz70r-MuiFormGroup-root {
+  grid-gap: 0px 7px;
+}
+.dynamic--radio .css-11zohuh-MuiSvgIcon-root {
+  width: auto !important;
+  height: auto !important;
+}
+/* {{ END:: Radio button CSS --------> }} */
+
+/* {{ START:: Accordion table CSS --------> }} */
+.accordion--table .thead-dark tr th:nth-child(1),
+.accordion--table tbody tr td:nth-child(1) {
+  text-align: center;
+}
+.accordion--table .thead-dark tr th {
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: #fff;
+  background-color: var(--main-table-header-color, var(--main-banner-alt-color, gray)) !important;
+}
+.accordion--table tbody tr td {
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: #202020;
+}
+.accordion--table .thead-dark tr th span,
+.accordion--table tbody tr td span {
+  font-size: 13px;
+}
+
+/* {{ END:: Accordion table CSS --------> }} */
+
+/* {{ START:: Theme Accordion table CSS --------> }} */
+
+.theme--accordion-table thead tr th,
+.theme--accordion-table tbody tr td {
+  font-size: 14px;
+  color: #202020;
+}
+.theme--accordion-table thead tr th,
+.composite-list--table-container .theme--accordion-table thead tr th span {
+  background-color: var(--main-table-header-color, var(--main-banner-alt-color, gray));
+  color: #fff;
+  font-weight: 500;
+}
+.composite-list--table-container .theme--accordion-table thead tr th:first-child span {
+  color: #fff;
+}
+.composite-list--table-container .theme--accordion-table thead tr th:first-child {
+  min-width: 2%;
+  width: 2%;
+}
+
+.side---popup .list-group .list-group-item {
+  font-size: 14px;
+  font-weight: 500;
+  color: #202020;
+  padding: 4px 16px;
+  cursor: pointer;
+}
+/* {{ END:: Theme Accordion table CSS --------> }} */

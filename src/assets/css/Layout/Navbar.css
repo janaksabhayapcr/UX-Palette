@@ -1,0 +1,93 @@
+@font-face {
+  font-family: Mallanna;
+  src: url(../../fonts/Mallanna-Regular.ttf);
+}
+@import url('../../font-awesome/css/font-awesome.min.css');
+
+* {
+  font-family: Mallanna;
+}
+
+.navbar--content {
+  position: sticky;
+  top: 64px;
+  background-color: #3c6d9a;
+  padding: 8px 24px;
+  z-index: 1111;
+}
+.navbar--content .main--menu {
+  padding-left: 0px;
+  list-style-type: none;
+  margin-bottom: 0px;
+  display: flex;
+  align-items: center;
+  grid-gap: 20px;
+}
+.navbar--content ul .menu--submenu-list .sub-menu {
+  list-style-type: none;
+  margin-bottom: 0px;
+  background-color: #3c6d9a;
+  border: 1px solid #595959;
+}
+.navbar--content ul li a,
+.navbar--content ul li p {
+  color: #f2f2f2;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: initial;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.navbar--content ul .menu--link,
+.navbar--content ul .menu--submenu-list {
+  /* margin: 0px 24px 0px 0px; */
+  transition: all 0.4s ease-in-out;
+}
+.navbar--content ul .menu--submenu-list {
+  position: relative;
+}
+.navbar--content ul .menu--link:hover a,
+.navbar--content ul .menu--submenu-list:hover p,
+.navbar--content ul .menu--submenu-list .sub-menu li:hover a {
+  color: #6dc1ef;
+}
+.navbar--content ul .menu--submenu-list:hover ul {
+  visibility: visible;
+}
+.navbar--content ul .menu--submenu-list ul {
+  visibility: hidden;
+  position: absolute;
+  top: 18px;
+  left: 0px;
+  padding: 4px 12px;
+  width: 200px;
+  border-radius: 4px;
+  z-index: 9999;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.navbar--content ul .menu--submenu-list .sub-menu li {
+  margin-bottom: 4px;
+  text-align: left;
+}
+.navbar--content ul .menu--submenu-list .sub-menu li:last-child {
+  margin-bottom: 0px;
+}
+.navbar--content ul .menu--submenu-list .sub-menu li a {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: initial;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  color: #f2f2f2;
+}
+
+.menu--submenu-list:has(.active-manu) p, .active-manu a {
+  color: #6dc1ef !important;
+}

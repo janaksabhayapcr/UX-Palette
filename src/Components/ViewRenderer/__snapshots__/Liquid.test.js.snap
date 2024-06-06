@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`View Renderer : Liquid Test  Should render with all of the props 1`] = `
+<div
+  className="view-table-container"
+>
+  <div>
+    <div
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": Object {},
+        }
+      }
+      id="[object Object]undefined"
+    />
+  </div>
+</div>
+`;
